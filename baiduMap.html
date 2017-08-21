@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+  	<meta name="renderer" content="ie-comp">
+  	<meta name="renderer" content="ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_390698_7060g498h6si3sor.css">
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=5aiK2z3bGTyMnInk6vjL0tZrU8GKHhl9" type="text/javascript"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div class="search clearfix">
+      <input type="text" name="" value="" id="input_search_place" placeholder="搜地点、查公交、找路线">
+      <div class="iconfont icon-luxian route-btn" id="route_btn"></div>
+      <div class="iconfont icon-sousuo search-btn" id="search_btn"></div>
+
+      <div class="change-route clearfix" id="change_route">
+        <div class="route-bar">
+          <div class="iconfont icon-iconfontjiaotongiconwalk" index='walk'></div>
+          <div class="iconfont icon-jiache" index='car'></div>
+          <div class="iconfont icon-font18" index='bus'></div>
+          <div id="arrow"></div>
+        </div>
+        <div class="iconfont icon-guanbi" id="close_btn"></div>
+
+        <div class="route-choose">
+          <div class="route-exchange iconfont icon-jiaohuan" id="route_exchange"></div>
+          <div class="route-write">
+            <div><div class="iconfont icon-icon32208"></div><input type="text" name="" value="" id="input_start_place" placeholder="输入起点"></div>
+            <div><div class="iconfont icon-icon32208"></div><input type="text" name="" value="" id="input_end_place" placeholder="输入终点"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="result_display"></div>
+  </body>
+</html>

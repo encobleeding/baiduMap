@@ -1,0 +1,186 @@
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+.clearfix:after {
+  clear: both;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+input {
+  outline:none;
+  padding-left: 10px;
+}
+#map {
+  width: 100%;
+  height: 100%;
+  background: red;
+}
+
+.search {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.search #input_search_place {
+  width: 300px;
+  height: 35px;
+  background: #fff;
+  border: none;
+  box-shadow: 5px 5px 5px #ddd;
+  font-size: 15px;
+  float: left;
+}
+
+.search .route-btn {
+  float: left;
+  background-color: #fff;
+  color: #3385ff;
+  height: 35px;
+  width: 35px;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+  line-height: 35px;
+  border-left: 1px solid #ddd;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px #ddd;
+}
+
+.search .search-btn {
+  float: right;
+  background-color: #3385ff;
+  color: #fff;
+  height: 35px;
+  width: 50px;
+  text-align: center;
+  line-height: 35px;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px #ddd;
+  font-size: 25px;
+}
+.search .search-btn:hover {
+  background-color: #2e77e5;
+}
+
+.search .change-route {
+  width: 346px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  background-color: #fff;
+}
+
+.search .route-bar {
+  width: 300px;
+  height: 35px;
+  float: left;
+  border-bottom:1px solid #2e77e5;
+}
+
+.search .route-bar .iconfont {
+  width: 33.3%;
+  height: 100%;
+  text-align: center;
+  float: left;
+  line-height: 35px;
+  font-size: 22px;
+  color: #ccc;
+  cursor: pointer;
+}
+.search .route-bar .iconfont:hover {
+  color: #2e77e5;
+}
+
+.search .change-route > .iconfont {
+  width: 35px;
+  height: 35px;
+  border-left: 1px solid #ddd;
+  text-align: center;
+  line-height: 35px;
+  font-size: 22px;
+  float: right;
+  color: #ccc;
+  cursor: pointer;
+}
+.search .change-route .route-choose {
+  float: left;
+}
+.search .change-route .route-choose .route-exchange {
+  width: 40px;
+  height: 100px;
+  text-align: center;
+  font-size: 25px;
+  color: #ccc;
+  cursor: pointer;
+  line-height: 100px;
+  float: left;
+}
+
+.search .change-route .route-choose .route-write {
+  width: 260px;
+  height: 100px;
+  float: right;
+}
+
+.search .change-route .route-choose .route-write > div {
+  width: 100%;
+  line-height: 50px;
+  height: 50px;
+}
+.search .change-route .route-choose .route-write > div + div {
+  border-top: 1px solid #ddd;
+}
+
+.search .change-route .route-choose .route-write > div > .iconfont {
+  float: left;
+  font-size: 20px;
+  font-weight: bolder;
+  width: 30px;
+}
+.search .change-route .route-choose .route-write > div:nth-of-type(1) .iconfont{
+  color: yellowgreen;
+}
+.search .change-route .route-choose .route-write > div:nth-of-type(2) .iconfont{
+  color: pink;
+}
+
+.search .change-route .route-choose .route-write > div > input {
+  border: none;
+  width: 220px;
+  height: 25px;
+  font-size: 15px;
+}
+
+#result_display {
+  width: 300px;
+  /*height: 500px;*/
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  right: 100px;
+  height: 400px;
+}
+
+#arrow {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  transform: rotate(45deg);
+  border-left: 1px solid #3385ff;
+  border-top: 1px solid #3385ff;
+  top: 32px;
+  background: #fff;
+  left: 45px;
+}
